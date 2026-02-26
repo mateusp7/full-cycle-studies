@@ -12,15 +12,15 @@ This project is a message classifier for WhatsApp or any chat, that don't answer
 ## Field of classifier
 
 - Intent:
-  1. OPT_OUT — user wants to stop (“sair”, “cancelar”, “parar mensagens”)
-  2. GREETING — greeting (“oi”, “bom dia”)
-  3. INFO_REQUEST — asking for information (“qual horário?”, “como funciona?”)
-  4. SUPPORT_REQUEST — problem/bug (“não funciona”, “erro”, “não consigo”)
-  5. BILLING — price/subscription/payment (“valor”, “plano”, “pix”, “boleto”)
-  6. SCHEDULING — schedule/agenda (“agendar”, “horário”, “amanhã”)
-  7. NEGATIVE_FEEDBACK — complaint (“péssimo”, “ruim”, “não gostei”)
-  8. SPAM — suspicious link, promotion, scam, irrelevant content
-  9. OTHER — anything else
+  1. `OPT_OUT` — user wants to stop (“sair”, “cancelar”, “parar mensagens”)
+  2. `GREETING` — greeting (“oi”, “bom dia”)
+  3. `INFO_REQUEST` — asking for information (“qual horário?”, “como funciona?”)
+  4. `SUPPORT_REQUEST` — problem/bug (“não funciona”, “erro”, “não consigo”)
+  5. `BILLING` — price/subscription/payment (“valor”, “plano”, “pix”, “boleto”)
+  6. `SCHEDULING` — schedule/agenda (“agendar”, “horário”, “amanhã”)
+  7. `NEGATIVE_FEEDBACK` — complaint (“péssimo”, “ruim”, “não gostei”)
+  8. `SPAM` — suspicious link, promotion, scam, irrelevant content
+  9. `OTHER` — anything else
 - Confidence: 0 to 1
   - If the confidence is less than 0.55, the intent will be OTHER and the classifier will sugest to request explanation
 - Entities: 
@@ -38,9 +38,9 @@ This project is a message classifier for WhatsApp or any chat, that don't answer
     - other
   2. value: string
 - Should reply: boolean
-  - If intent is OPT_OUT, should_reply will be false
+  - If intent is `OPT_OUT`, `should_reply` will be false
 - Reply hint: string
-  - If intent is OPT_OUT, reply_hint will be empty
+  - If intent is `OPT_OUT`, `reply_hint` will be empty
   - Max length is 160 characters
 
 ## Tech Stack
